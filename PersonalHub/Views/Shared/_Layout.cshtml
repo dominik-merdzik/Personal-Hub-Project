@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PersonalHub.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <!--<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light text-center">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PersonalHub</a>
+                <!--<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PersonalHub</a>-->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" height="95px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +24,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Schedules" asp-action="Index">Schedule</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                         <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -39,7 +43,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - PersonalHub - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            PersonalHub - Assignment 2 COMP-2084G - Dominik Merdzik LH#1169488 G#200506842 | <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -47,7 +51,14 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuxMCdjLUf5Ey7DvJBLQWPDhp4od7_bpU&libraries=places&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
+    <!-- Google Places API used to autocomplete any address the user inputs on any page -->
+        <script type="text/javascript">
+               $(document).ready(function () {
+                   var input = document.getElementById('Location');
+                   var autocomplete = new google.maps.places.Autocomplete(input);
+               });
+        </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T72r/ume7XfsPbt8jFylgq+Eh5+1Ioz2LrKjVLuzib4=",
+  "Hash": "ll+lx2IR9xnvNFJgEAgfMp0/EiPyQIxbedhEEDOxWMQ=",
   "Source": "PersonalHub",
   "BasePath": "_content/PersonalHub",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\images\\logo.png",
+      "SourceId": "PersonalHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\",
+      "BasePath": "_content/PersonalHub",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\js\\site.js",
