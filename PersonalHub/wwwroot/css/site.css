@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:wght@400;500&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
@@ -14,7 +13,11 @@ p, ul, ol, dl, dd, dt, li, th, td, a {
 .navbar .navbar-nav .nav-link {
     font-weight: 400;
     display: flex;
-    padding-top: 60px;
+    padding-top: 91px;
+}
+
+body{
+    height:1200px;
 }
 
 
@@ -63,13 +66,15 @@ body {
 }
 
 footer {
-    background-color: #A5C9CA;
+    background-color: #212529;
 }
 
 .nav-link {
-    font-family: 'Ubuntu';
-    font-weight: 300 !important;
-    font-size: 21px !important;
+    /*font-family: 'Ubuntu'; */
+    font-family: Bebas Neue;
+    font-weight: 400 !important;
+    font-size: 27px !important;
+    color: #556279!important;
 }
 
 .index-padding-top {
@@ -82,7 +87,11 @@ footer {
 }
 
 .btn-blue {
-    background-color: #80a4db !important;
+    background-color: #556279 !important;
+}
+
+.nav-link:hover {
+    color: #9094A2 !important;
 }
 
 
