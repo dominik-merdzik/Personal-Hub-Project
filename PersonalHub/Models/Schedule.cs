@@ -20,11 +20,9 @@ namespace PersonalHub.Models
         public DateTime Time { get; set; }
 
         [Required]
-        public string? Day { get; set; }
-        [Required]
-        public string? Month { get; set; }
-        [Required]
-        public string? Year { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
+        public string? Date { get; set; }
 
         // FK for Parent Category
         [Display(Name = "Category")]

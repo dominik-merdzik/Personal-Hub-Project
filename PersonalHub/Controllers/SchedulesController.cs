@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
 using PersonalHub.Data;
 using PersonalHub.Models;
@@ -22,7 +23,8 @@ namespace PersonalHub.Controllers
         // GET: Schedules
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Schedules.ToListAsync());
+            var applicationDbContext = _context.Schedules.Include(s => s.Category);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Schedules/Details/5
@@ -34,6 +36,7 @@ namespace PersonalHub.Controllers
             }
 
             var schedule = await _context.Schedules
+                .Include(s => s.Category)
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
@@ -46,6 +49,7 @@ namespace PersonalHub.Controllers
         // GET: Schedules/Create
         public IActionResult Create()
         {
+            ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name");
             return View();
         }
 
@@ -54,7 +58,7 @@ namespace PersonalHub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ScheduleId,Title,Description,Location,Time,Day,Month,Year")] Schedule schedule)
+        public async Task<IActionResult> Create([Bind("ScheduleId,Title,Description,Location,Time,Date,CategoryId")] Schedule schedule)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +66,7 @@ namespace PersonalHub.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name", schedule.CategoryId);
             return View(schedule);
         }
 
@@ -78,6 +83,7 @@ namespace PersonalHub.Controllers
             {
                 return NotFound();
             }
+            ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name", schedule.CategoryId);
             return View(schedule);
         }
 
@@ -86,7 +92,7 @@ namespace PersonalHub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ScheduleId,Title,Description,Location,Time,Day,Month,Year")] Schedule schedule)
+        public async Task<IActionResult> Edit(int id, [Bind("ScheduleId,Title,Description,Location,Time,Date,CategoryId")] Schedule schedule)
         {
             if (id != schedule.ScheduleId)
             {
@@ -113,6 +119,7 @@ namespace PersonalHub.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name", schedule.CategoryId);
             return View(schedule);
         }
 
@@ -125,6 +132,7 @@ namespace PersonalHub.Controllers
             }
 
             var schedule = await _context.Schedules
+                .Include(s => s.Category)
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
@@ -157,5 +165,7 @@ namespace PersonalHub.Controllers
         {
           return _context.Schedules.Any(e => e.ScheduleId == id);
         }
+
+        
     }
 }
