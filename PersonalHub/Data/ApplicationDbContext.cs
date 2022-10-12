@@ -9,5 +9,7 @@ namespace PersonalHub.Data
             : base(options)
         {
         }
+
+        public DbSet<PersonalHub.Models.Schedule> Schedules { get; set; }
     }
 }
