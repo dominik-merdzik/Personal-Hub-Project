@@ -13,7 +13,7 @@ p, ul, ol, dl, dd, dt, li, th, td, a {
 .navbar .navbar-nav .nav-link {
     font-weight: 400;
     display: flex;
-    padding-top: 91px;
+    padding-top: 92px;
 }
 
 body{
@@ -73,7 +73,7 @@ footer {
     /*font-family: 'Ubuntu'; */
     font-family: Bebas Neue;
     font-weight: 400 !important;
-    font-size: 27px !important;
+    font-size: 25px !important;
     color: #556279!important;
 }
 
