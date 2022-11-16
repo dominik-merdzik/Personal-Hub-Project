@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kOdbzNa2OU3xp/TE1RQ1Ka4WMwTlC6WYdxgxbU/Qvlg=",
+  "Hash": "FEDhAOHFMwp0/DzadbUBvAKqfl+n4AQ6pIrx2JWzs9o=",
   "Source": "PersonalHub",
   "BasePath": "_content/PersonalHub",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\images\\logo-footer.png",
+      "SourceId": "PersonalHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\",
+      "BasePath": "_content/PersonalHub",
+      "RelativePath": "images/logo-footer.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo-footer.png"
     },
     {
       "Identity": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\wwwroot\\js\\site.js",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rae5paRei5A98ifyjuXMR7WWMA2/+O/rEMVpEhP1BsjrF7WIOVdjSKiX2M/mhfOdAkrTnWn9dnes/MstAfpKVQ==",
+  "dgSpecHash": "7yKBAJqVauJHqETaW4Kc/TtXFj26vgT6mCaSKh3YGOjcBZPvqyJDsxIWxFJj9Uyt6hn8y84hD62yG2rwnt61aA==",
   "success": true,
   "projectFilePath": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\PersonalHub.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\domin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.11\\microsoft.aspnetcore.authentication.google.6.0.11.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.8\\microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.8\\microsoft.aspnetcore.cryptography.keyderivation.6.0.8.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.8.nupkg.sha512",
