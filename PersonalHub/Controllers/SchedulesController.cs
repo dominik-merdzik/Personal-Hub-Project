@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Scripting;
@@ -11,6 +12,7 @@ using PersonalHub.Models;
 
 namespace PersonalHub.Controllers
 {
+    [Authorize]
     public class SchedulesController : Controller
     {
         private readonly ApplicationDbContext _context;
