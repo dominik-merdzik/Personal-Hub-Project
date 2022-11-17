@@ -33,5 +33,5 @@ Here is a list of a few things I would like to add:
  
  # Website Link!
  This website is hosted on the Azure Platform.
- https://personalhub.azurewebsites.net/
+https://your-personal-hub.azurewebsites.net/
 
