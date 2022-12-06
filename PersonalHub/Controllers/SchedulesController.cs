@@ -26,7 +26,7 @@ namespace PersonalHub.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Schedules.Include(s => s.Category);
-            return View(await applicationDbContext.ToListAsync());
+            return View("Index",await applicationDbContext.ToListAsync());
         }
 
         // GET: Schedules/Details/5

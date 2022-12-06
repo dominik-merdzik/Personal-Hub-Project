@@ -11,7 +11,7 @@ namespace PersonalHub.Data
         {
         }
 
-        public DbSet<PersonalHub.Models.Schedule> Schedules { get; set; }
+        public DbSet<PersonalHub.Models.Schedule> Schedules { get; set; } 
 
         public DbSet<PersonalHub.Models.Category> Category { get; set; }
     }
