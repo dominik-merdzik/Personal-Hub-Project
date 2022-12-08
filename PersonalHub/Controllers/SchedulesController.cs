@@ -34,7 +34,7 @@ namespace PersonalHub.Controllers
         {
             if (id == null || _context.Schedules == null)
             {
-                return NotFound();
+                return View("404");
             }
 
             var schedule = await _context.Schedules
@@ -42,17 +42,17 @@ namespace PersonalHub.Controllers
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
-                return NotFound();
+                return View("404");
             }
 
-            return View(schedule);
+            return View("Details",schedule);
         }
 
         // GET: Schedules/Create
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name");
-            return View();
+            return View("Create");
         }
 
         // POST: Schedules/Create
@@ -69,7 +69,7 @@ namespace PersonalHub.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name", schedule.CategoryId);
-            return View(schedule);
+            return View("Create",schedule);
         }
 
         // GET: Schedules/Edit/5
@@ -77,13 +77,13 @@ namespace PersonalHub.Controllers
         {
             if (id == null || _context.Schedules == null)
             {
-                return NotFound();
+                return View("404");
             }
 
             var schedule = await _context.Schedules.FindAsync(id);
             if (schedule == null)
             {
-                return NotFound();
+                return View("404");
             }
             ViewData["CategoryId"] = new SelectList(_context.Set<Category>(), "CategoryId", "Name", schedule.CategoryId);
             return View(schedule);
@@ -130,7 +130,7 @@ namespace PersonalHub.Controllers
         {
             if (id == null || _context.Schedules == null)
             {
-                return NotFound();
+                return View("404");
             }
 
             var schedule = await _context.Schedules
@@ -138,10 +138,10 @@ namespace PersonalHub.Controllers
                 .FirstOrDefaultAsync(m => m.ScheduleId == id);
             if (schedule == null)
             {
-                return NotFound();
+                return View("404");
             }
 
-            return View(schedule);
+            return View("Delete",schedule);
         }
 
         // POST: Schedules/Delete/5
