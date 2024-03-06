@@ -10323,26 +10323,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\domin\\.nuget\\packages\\": {}
+    "/Users/dominikmerdzik/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\PersonalHub.csproj",
+      "projectUniqueName": "/Users/dominikmerdzik/Documents/dev/Personal-Hub-Project/PersonalHub/PersonalHub.csproj",
       "projectName": "PersonalHub",
-      "projectPath": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\PersonalHub.csproj",
-      "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\domin\\Documents\\School\\COMP2006 - c++\\PersonalHub\\PersonalHub\\obj\\",
+      "projectPath": "/Users/dominikmerdzik/Documents/dev/Personal-Hub-Project/PersonalHub/PersonalHub.csproj",
+      "packagesPath": "/Users/dominikmerdzik/.nuget/packages/",
+      "outputPath": "/Users/dominikmerdzik/Documents/dev/Personal-Hub-Project/PersonalHub/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dominikmerdzik/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10411,7 +10410,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
       }
     }
   }

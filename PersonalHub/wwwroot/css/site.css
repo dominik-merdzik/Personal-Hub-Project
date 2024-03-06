@@ -16,9 +16,18 @@ p, ul, ol, dl, dd, dt, li, th, td, a {
     padding-top: 92px;
 }
 
+html, body {
+    height: 100%; /* Make sure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
 
 body {
-    height: 1200px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.container {
+    flex: 1; /* Makes the container grow to fill available space, pushing the footer down */
 }
 
 
@@ -58,7 +67,6 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
     background-color: #f5f5f5;
 }
 
@@ -68,6 +76,7 @@ body {
 
 footer {
     background-color: #212529;
+
 }
 
 .nav-link {
